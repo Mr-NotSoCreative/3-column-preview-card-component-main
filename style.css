@@ -55,8 +55,8 @@ h2 {
 }
 .desc {
   color: var(--Transparent-white-paragraphs);
-  line-height: 20px;
-  font-size: 90%;
+  line-height: 25px;
+  font-size: 95%;
 }
 .header > * {
   margin: 20px 0;
