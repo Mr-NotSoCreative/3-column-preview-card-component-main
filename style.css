@@ -49,14 +49,14 @@ body {
 }
 h1,
 h2 {
-  font-size: 220%;
+  font-size: 250%;
   color: var(--Very-light-gray-background-headings-buttons);
   font-family: "Big Shoulders Display", cursive;
 }
 .desc {
   color: var(--Transparent-white-paragraphs);
   line-height: 20px;
-  font-size: 85%;
+  font-size: 90%;
 }
 .header > * {
   margin: 20px 0;
