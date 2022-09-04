@@ -90,6 +90,13 @@ h2 {
   border: 2px solid var(--Very-light-gray-background-headings-buttons);
   color: var(--Very-light-gray-background-headings-buttons);
 }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 @media screen and (max-width: 887px) {
   .grid-container {
     margin: 1rem 1.5rem;
