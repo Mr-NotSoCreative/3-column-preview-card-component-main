@@ -17,10 +17,13 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
 }
+
 .container {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .grid-container {
   display: grid;
