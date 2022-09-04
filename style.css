@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 0 1.5rem;
+}
+.card {
+  height: 100%;
+  padding: 25px 45px 48px 45px;
+  display: grid;
+  row-gap: 50px;
+}
+.card-1 {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+.card-2 {
+  background-color: var(--Dark-cyan);
+}
+.card-3 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+h1,
+h2 {
+  font-size: 220%;
+  color: var(--Very-light-gray-background-headings-buttons);
+  font-family: "Big Shoulders Display", cursive;
+}
+.desc {
+  color: var(--Transparent-white-paragraphs);
+  line-height: 20px;
+  font-size: 85%;
+}
+.header > * {
+  margin: 17px 0;
+}
+
+.learn-more {
+  align-self: end;
+}
+
+.orange {
+  color: var(--Bright-orange);
+}
+.dark-cyan {
+  color: var(--Dark-cyan);
+}
+.very-dark-cyan {
+  color: var(--Very-dark-cyan);
+}
+.link {
+  text-decoration: none;
+  border: none;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: inherit;
+  transition: background-color 0.3s ease-in-out;
+}
+.link:hover {
+  background-color: transparent;
+  border: 2px solid var(--Very-light-gray-background-headings-buttons);
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+@media screen and (max-width: 887px) {
+  .grid-container {
+    margin: 1rem 1.5rem;
+  }
+  .card-1 {
+    border-radius: 10px 0 0 0;
+  }
+  .card-2 {
+    border-radius: 0 10px 10px 0;
+  }
+  .card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media screen and (max-width: 607px) {
+  .card-1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .card-2 {
+    border-radius: 0;
+  }
+  .card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    row-gap: 20px;
+  }
+}
